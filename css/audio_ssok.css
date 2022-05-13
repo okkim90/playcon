@@ -57,7 +57,7 @@
 
 .audio_ssok_list .audio_item .txt_box .audioDu { padding-left: 19px; position: relative; font-size: 11px; line-height: 15px; letter-spacing: 0.1px; color: #999; margin-top: 5px; }
 
-.audio_ssok_list .audio_item .txt_box .audioDu::before { content: ''; position: absolute; width: 15px; height: 15px; background-image: url(/images/ico/ico_clock_blue.svg); background-repeat: no-repeat; background-position: center center; left: 0; top: 0; }
+.audio_ssok_list .audio_item .txt_box .audioDu::before { content: ''; position: absolute; width: 15px; height: 15px; background-image: url(../images/ico/ico_clock_blue.svg); background-repeat: no-repeat; background-position: center center; left: 0; top: 0; }
 
 .audio_item.on .equalizer_layer { opacity: 1; }
 
@@ -93,19 +93,19 @@
 
 .audio_player .controls .control_box .player_btn { width: 24px; height: 24px; margin: 0 8px; background-repeat: no-repeat; background-position: center center; background-size: cover; }
 
-.audio_player .controls .control_box .player_btn.play { background-image: url(/images/ico/ico_play2.svg); }
+.audio_player .controls .control_box .player_btn.play { background-image: url(../images/ico/ico_play2.svg); }
 
-.audio_player .controls .control_box .player_btn.pause { background-image: url(/images/ico/ico_pause.svg); }
+.audio_player .controls .control_box .player_btn.pause { background-image: url(../images/ico/ico_pause.svg); }
 
 .audio_player .controls .control_box .control_box_btns { display: inline-block; vertical-align: top; width: 23px; height: 23px; font-size: 10px; color: #fff; line-height: 24px; text-align: center; background-repeat: no-repeat; background-position: center center; font-family: arial; background-size: contain; }
 
 .audio_player .controls .control_box .control_box_btns .sec { display: inline-block; }
 
-.audio_player .controls .control_box .control_box_btns.btn_rewind { background-image: url(/images/ico/ico_rewind.svg); }
+.audio_player .controls .control_box .control_box_btns.btn_rewind { background-image: url(../images/ico/ico_rewind.svg); }
 
 .audio_player .controls .control_box .control_box_btns.btn_rewind .sec { margin-left: -2px; }
 
-.audio_player .controls .control_box .control_box_btns.btn_forward { background-image: url(/images/ico/ico_forward.svg); }
+.audio_player .controls .control_box .control_box_btns.btn_forward { background-image: url(../images/ico/ico_forward.svg); }
 
 .audio_player .controls .control_box .control_box_btns.btn_forward .sec { margin-left: 1px; }
 
@@ -149,7 +149,7 @@
 
 .audio_player .full_tit_txt { font-size: 12px; line-height: 18px; max-height: 72px; }
 
-.audio_player .btn_toggle_size { width: 24px; height: 24px; background-image: url(/images/ico/ico_arrow_open.svg); background-repeat: no-repeat; background-position: center center; }
+.audio_player .btn_toggle_size { width: 24px; height: 24px; background-image: url(../images/ico/ico_arrow_open.svg); background-repeat: no-repeat; background-position: center center; }
 
 .audio_player .btn_toggle_size.btn_minimal { position: absolute; right: 10px; top: 10px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
