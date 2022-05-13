@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>플레이콘</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sc_list.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div id="wrap" class="main">
+        <header id="header" class="header">
+            <div class="header_top">
+                <div class="header_top_inner">
+                    <h1 class="logo">
+                        <a href="">
+                            <span class="blind">플레이콘</span>
+                            <img src="./images/common/logo.png" alt="플레이콘">
+                        </a>
+                    </h1>
+                    <div class="header_util">
+                        <a href="" class="btn_mypage"><span class="blind">마이페이지</span></a>
+
+                        <!--로그아웃 상태-->
+                        <button type="button" class="btn_sign ty_logout">
+                            <i class="btn_sign_ico"></i>
+                            <span class="btn_sign_txt">로그인</span>
+                        </button>
+                        <!--// 로그아웃 상태-->
+                        <!-- 로그인 상태-->
+                        <!--
+                        <button type="button" class="btn_sign ty_login">
+                            <i class="btn_sign_ico"></i>
+                            <span class="btn_sign_txt">로그아웃</span>
+                        </button>
+                        -->
+                        <!--// 로그인 상태-->
+
+                        <!-- 햄버거버튼 삭제
+                        <button type="button" class="btn_lm">
+                            <span class="blind">전체메뉴</span>
+                            <div class="bar_box">
+                                <span class="bar top"></span>
+                                <span class="bar mid"></span>
+                                <span class="bar bot"></span>
+                            </div>
+                        </button>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div class="nav_area">
+                <nav id="nav" class="nav">
+                    <ul class="nav_list">
+                        <li><a href=""><span>어린이과학동아</span></a></li>
+                        <li><a href=""><span>어린이수학동아</span></a></li>
+                        <li><a href=""><span>오디오쏙</span></a></li>
+                        <li><a href=""><span>어과수TV</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="container" class="">
+            <section class="mv_area">
+                <div class="mv_wrap">
+                    <div class="mv">
+                        <div class="swiper-wrapper mv_list">
+                            <div class="swiper-slide mv_item mv_item1">
+                                <a href="" class="mv_item_link">
+                                    <img src="./images/main/mv01.jpg" alt="" class="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide mv_item mv_item2">
+                                <a href="" class="mv_item_link">
+                                    <img src="./images/main/mv02.jpg" alt="" class="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide mv_item mv_item3">
+                                <a href="" class="mv_item_link">
+                                    <img src="./images/main/mv03.jpg" alt="" class="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mv_pagination"></div>
+                        <div class="mv_btn_area">
+                            <button class="mv_btn mv_prev"><img src="./images/main/mv_prev.png" alt=""></button>
+                            <button class="mv_btn mv_next"><img src="./images/main/mv_next.png" alt=""></button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="inner">
+                <div class="main_sec_wrap col2">
+                    <section class="main_sec main_vote">
+                        <div class="main_sec_tit_area">
+                            <h2 class="main_sec_tit">어과동 투표</h2>
+                            <span class="ico_vote">ZONE<i></i></span>
+                        </div>
+                        <!--
+                            [DEV]
+                            활성화 class : on ,
+                            비활성화 class : off
+                        -->
+                        <div class="vote_box on">
+                            <div class="vote_box_cont">
+                                <strong class="vote_box_tit"><span>2022년 <br class="m_only"> 04월 15일 08호</span></strong>
+                                <div class="vote_box_info">
+                                    <p class="vote_box_period">2022.03.15 ~ <br class="m_only"> 2022.04.09</p>
+                                    <span class="vote_box_status">진행중</span>
+                                </div>
+                            </div>
+                            <a href="" class="vote_box_btn">
+                                <span>투표 참여하기</span>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="main_sec main_vote">
+                        <div class="main_sec_tit_area">
+                            <h2 class="main_sec_tit">어수동 투표</h2>
+                            <span class="ico_vote">ZONE<i></i></span>
+                        </div>
+                        <div class="vote_box off">
+                            <div class="vote_box_cont">
+                                <strong class="vote_box_tit"><span>2022년 <br class="m_only"> 04월 15일 08호</span></strong>
+                                <div class="vote_box_info">
+                                    <p class="vote_box_period">2022.03.15 ~ <br class="m_only"> 2022.04.09</p>
+                                    <span class="vote_box_status">마감</span>
+                                </div>
+                            </div>
+                            <a href="" class="vote_box_btn">
+                                <span>투표 참여하기</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="main_sec main_oc">
+                <div class="inner">
+                    <div class="main_sec_tit_area">
+                        <h2 class="main_sec_tit"><span class="sub">이달의</span> 온라인 클래스</h2>
+                        <i class="ico_play">
+                            <img src="./images/ico/ico_play.svg" alt="">
+                        </i>
+                    </div>
+                    <div class="main_oc_cont">
+                        <div class="oc_vid_area">
+                            <a href="" class="oc_vid_link">
+                                <div class="oc_vid_box sc_thumb ">
+                                    <div class="sc_thumb_img">
+                                        <img src="https://picsum.photos/1600/900" alt="">
+                                    </div>
+                                    <span class="tag_status ty_live">
+                                        <strong>LIVE</strong>
+                                        <span>진행중</span>
+                                    </span>
+                                    <!--
+                                        [DEV]
+                                        진행중 : .ty_live
+                                        예정 : .ty_comming
+                                        종료 : .ty_ended
+
+                                        <span class="tag_status ty_comming">
+                                            <strong>LIVE</strong>
+                                            <span>예정</span>
+                                        </span>
+                                        <span class="tag_status ty_ended">
+                                            <strong>LIVE</strong>
+                                            <span>종료</span>
+                                        </span>
+                                    -->
+                                    <div class="date_box">
+                                        01/25 (화)  17시 00분 ~ 18시 30분
+                                    </div>
+                                </div>
+                                <strong class="oc_vid_tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 똥손기자의 수학체험실 종이상자 로봇 손기자의 수학체험실 종이상자 로봇 똥</strong>
+                            </a>
+                        </div>
+                        <div class="oc_list_area">
+                            <div class="oc_list_area_inner">
+                                <div class="oc_list_box comming">
+                                    <h3 class="oc_list_box_tit"><strong>진행 예정인</strong> 온라인 클래스</h3>
+                                    <ul class="oc_list">
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>예정</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>예정</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>예정</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="oc_list_box ended">
+                                    <h3 class="oc_list_box_tit"><strong>종료된</strong> 온라인 클래스</h3>
+                                    <ul class="oc_list">
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>종료</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>종료</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>종료</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="oc_list_link">
+                                                <div class="ico_status ">
+                                                    <strong>LIVE</strong>
+                                                    <span>종료</span>
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="tit ellipsis1">[어린이과학동아 온라인클래스] 똥손기자의 수학체험실 종이상자 로봇 만들기!</p>
+                                                    <span class="date">2022년 4월 12일 00시 00분 ~ 00시 00분 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_sec main_audio">
+                <div class="inner">
+                    <div class="main_sec_tit_area">
+                        <h2 class="main_sec_tit"><span class="sub">새로 올라왔어요!</span> 생생 오디오쏙</h2>
+                        <i class="ico_play">
+                            <img src="./images/ico/ico_audio.svg" alt="">
+                        </i>
+                    </div>
+                    <div class="main_audio_cont">
+                        <div class="main_audio_slide">
+                            <ul class="swiper-wrapper main_audio_list">
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라 파트너를 찾아라 파트너를 찾아라파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide main_audio_item">
+                                    <a href="">
+                                        <div class="sc_thumb">
+                                            <span class="ico_audio">
+                                                <img src="./images/ico/ico_audio.svg" alt="">
+                                            </span>
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong class="tit ellipsis2">[도전! 섭섭박사 실험실!] 섭섭박사의 댄스 파트너를 찾아라</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main_sec main_tv">
+                <div class="inner">
+                    <div class="main_sec_tit_area">
+                        <h2 class="main_sec_tit fc_white"><span class="sub">이럴 땐 이런 영상!</span> 어과수TV</h2>
+                        <i class="ico_play">
+                            <img src="./images/ico/ico_tv.svg" alt="">
+                        </i>
+                    </div>
+                    <div class="main_tv_cont">
+                        <div class="main_tv_vid_area">
+                            <a href="">
+                                <div class="sc_thumb">
+                                    <div class="sc_thumb_img">
+                                        <img src="https://picsum.photos/1600/900" alt="">
+                                    </div>
+                                </div>
+                                <strong class="tit ellipsis1">[4/15 과학영상 읽어줌] 야생동물 사진가의 일상 아기코뿔! 아기코뿔! 아기코뿔! 아기코뿔!</strong>
+                            </a>
+                        </div>
+                        <div class="main_tv_list_area">
+                            <div class="main_tv_list_area_inner">
+                                <ul class="main_tv_list">
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음 내리실 층은 '우주'</strong>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음  </strong>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다.</strong>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다.</strong>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다.</strong>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다.</strong>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="main_tv_list_item">
+                                        <a href="" class="main_tv_list_link">
+                                            <div class="img_box">
+                                                <div class="sc_thumb">
+                                                    <div class="sc_thumb_img">
+                                                        <img src="https://picsum.photos/1600/900" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box ">
+                                                <strong class="tit ellipsis2">[추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다. [추천 영상] 다음 내리실 층은 '우주', '우주'층입니다.</strong>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <a href="" class="btn_ytb">
+                                    <i><img src="./images/ico/ico_ytb.svg" alt="유튜브"></i>
+                                    <strong>채널 바로가기</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer">
+            <ul class="footer_menu">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">광고안내</a></li>
+                <li><a href="">개인정보취급방침</a></li>
+            </ul>
+            <div class="footer_policy">
+                <h2 class="footer_policy_tit">
+                    <button type="button" class="btn_policy">㈜동아사이언스 키즈 플랫폼 <i></i></button>
+                </h2>
+                <div class="txt_box">
+                    ㈜동아사이언스 팝콘플래닛, 스토리콘 | 대표 : 장경애 <br>
+                    개인정보관리책임자 : <span>김수희 (privacy@dongascience.com) |</span> <span>청소년보호책임자 : 조기견</span> <br><br>
+                    서울시 용산구 청파로 109, 7층 (04370) | 문의 : 02-6749-2000 ｜팩스 : 02-3148-0789  사업자등록번호 : 101-81-62201 (사업자정보확인) | 통신판매업신고번호 : 제2013-서울용산-01101호 | 온라인 결제를 위한 PG사의 구매안전서비스(가입사실 확인)
+                </div>
+            </div>
+            <p class="copy">Copyright © Dongascience. All right reserved.</p>
+        </footer>
+    </div>
+
+    <!--<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var mv = new Swiper('.mv',{
+            speed:600,
+            slidesPerView:3,
+            loop:true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction:false
+            },
+            navigation: {
+                nextEl: '.mv_next',
+                prevEl: '.mv_prev'
+            },
+            pagination: {
+                clickable:true,
+                el: '.mv_pagination'
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView:1
+                }
+            }
+
+        });
+
+        var audio_slide = new Swiper('.main_audio_slide',{
+            slidesPerView:4,
+            spaceBetween: 40,
+            loop:true,
+            speed: 5000,
+            freeMode: true,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction:false
+            },
+
+            breakpoints: {
+                1024: {
+                    slidesPerView:3
+                },
+                767: {
+                    spaceBetween: 20,
+                    slidesPerView:1
+                }
+            }
+        });
+
+
+
+        resizeCont();
+        $(window).on('load resize',function(){
+            resizeCont();
+        });
+
+        function resizeCont(){
+            let ovH = $('.oc_vid_area').outerHeight();
+            $('.oc_list_area_inner').outerHeight(ovH);
+
+
+            let mtvH = $('.main_tv_vid_area').outerHeight();
+            $('.main_tv_list_area_inner').outerHeight(mtvH);
+        }
+
+
+        // $(window).on('load resize scroll',function(){
+        //     if($(this).scrollTop() > 0){
+        //         $('#header').addClass('bgon')
+        //     }else{
+        //         $('#header').removeClass('bgon')
+        //     }
+        // });
+
+    </script>
+</body>
+</html>
