@@ -137,10 +137,12 @@
             .audio_thumb {
                 width: 106px;
                 flex-shrink: 0;
+                cursor: pointer;
             }
             .txt_box {
                 padding-left: 10px;
                 flex:1;
+                cursor: pointer;
                 .tit {
                     font-size: 13px;
                     line-height: 18px;
@@ -177,6 +179,10 @@
 
 
 .audio_item {
+    .audio_thumb ,
+    .txt_box {
+        cursor: pointer;
+    }
     &.on {
        .equalizer_layer {
            opacity: 1;
@@ -188,8 +194,16 @@
 }
 
 .audio_player {
+    opacity: 0;
+    z-index: -9999;
+    visibility: hidden;
+
+    &.on {
+        opacity: 1;
+        z-index: 999;
+        visibility: visible;
+    }
     position: fixed;
-    z-index: 99;
     left: 50%;
     bottom: 0;
     max-width: 740px;
@@ -335,6 +349,8 @@
             &_left {
                 display: flex;
                 align-items: center;
+                position: relative;
+                z-index: 99;
             }
             .speed_ctrl {
 
@@ -415,6 +431,8 @@
                 color: #fff;
                 font-size: 10px;
                 box-sizing: border-box;
+                position: relative;
+                z-index: 99;
             }
         }
 
