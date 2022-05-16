@@ -214,6 +214,7 @@
                 z-index: 0;
                 opacity: 1;
                 visibility: visible;
+                box-sizing: border-box;
             }
             .controls_bot {
                 display: none;
@@ -251,10 +252,16 @@
 
         .marquee_tit {
             position: absolute;
+            width: 100%;
+            box-sizing: border-box;
             z-index: -9999;
             opacity: 0;
             visibility: hidden;
             font-size: 13px;
+
+            .marquee_inner {
+                white-space: nowrap;
+            }
         }
         .time {
             display: flex;

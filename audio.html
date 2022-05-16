@@ -43,12 +43,12 @@
                             </h2>
                             <div class="btn_box">
                                 <span class="total_playtime">
-                                    <i><img src="/images/ico/ico_clock.svg" alt=""></i>
+                                    <i><img src="./images/ico/ico_clock.svg" alt=""></i>
                                     총 00분 00초
                                 </span>
                                 <button type="button" class="btn_playall" onclick="playAudio(0)">
                                     전체재생
-                                    <i><img src="/images/ico/ico_play_w.svg" alt=""></i>
+                                    <i><img src="./images/ico/ico_play_w.svg" alt=""></i>
                                 </button>
                             </div>
                         </div>
@@ -456,13 +456,7 @@
                 $('.audio_item').removeClass('on');
                 //$('.audio_item .btn').removeClass('on');
                 $('.audio_item').eq(currentVal).addClass('on').find('.btn').addClass('on');
-                $('.marquee_tit').html(
-                    '<marquee>'+
-                        '<div class="marquee_inner">'+
-                            audioName +
-                        '</div>'+
-                    '</marquee>'
-                );
+                $('.marquee_inner').html( audioName);
                 $('#audio_tit').text(audioName);
                 console.log(audioName);
                 setTimer();
