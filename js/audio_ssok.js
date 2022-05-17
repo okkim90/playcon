@@ -159,7 +159,8 @@
         var audioName = "";
         var play_speed = 1;
         var play_type;
-
+        var like_status;
+        var audio_like = document.getElementById('audio_like');
         function playAudio(val) {
             $('.audio_player').addClass('on');
 
@@ -168,7 +169,7 @@
             var url = audios[val].url;
             var name = audios[val].title;
             //console.log(name);
-
+            var like = audios[val].like;
 
             if (url !== currentFile) {
                 audio.src = url;
@@ -177,7 +178,13 @@
                 currentVal = val;
 
                 //$('.name').text(audioName);
-
+               if(like){
+                    //console.log('true');
+                    audio_like.checked = true
+               }else{
+                    //console.log('false');
+                    audio_like.checked = false
+               }
             }
             if (audio.paused) {
                 //oAudio.play();
@@ -213,6 +220,7 @@
             var url = $this.data('url');
             var name = $this.data('name');
             var status = $this.data('status');
+            var like = $this.data('like');
             //console.log(status);
 
 
@@ -224,7 +232,13 @@
                 currentFile = url;
                 //currentVal = val;
                 //$('.name').text(audioName);
-
+                if(like){
+                    //console.log('true');
+                    audio_like.checked = true
+                }else{
+                    //console.log('false');
+                    audio_like.checked = false
+                }
             }else{
 
 

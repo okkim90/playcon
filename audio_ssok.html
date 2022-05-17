@@ -62,21 +62,37 @@
                 <div class="nav_area">
                     <nav id="nav" class="nav">
                         <ul class="nav_list">
-                            <li><a href=""><span>어린이과학동아</span></a></li>
-                            <li><a href=""><span>어린이수학동아</span></a></li>
+                            <li><a href=""><span>어과동</span></a></li>
+                            <li><a href=""><span>어수동</span></a></li>
                             <li><a href=""><span>오디오쏙</span></a></li>
                             <li><a href=""><span>어과수TV</span></a></li>
+                            <li><a href=""><span>놀이터</span></a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <div id="container" class="sub_m ty_audio_ssok has_player has_header">
+
+            <div id="container" class="sub_m has_player ">
+                <div class="top_cate">
+                    <ul class="top_cate_list">
+                        <li class="top_cate_item">
+                            <a href="" class="top_cate_link on">함께 듣는 어과수</a>
+                        </li>
+                        <li class="top_cate_item">
+                            <a href="" class="top_cate_link">NEW</a>
+                        </li>
+                        <li class="top_cate_item">
+                            <a href="" class="top_cate_link">BEST</a>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="audio_ssok_list">
                     <li class="audio_item">
                         <div class="audio_thumb"
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio1.mp3"
                             data-name="[테스트 테스트 테스트] 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트테 스트 테스 트테스트 테스트 트테스트 테스트 트테스트 테스트 트테스트 테스트"
+                            data-like=false
                         >
                             <div class="sc_thumb">
                                 <div class="sc_thumb_img">
@@ -100,6 +116,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio1.mp3"
                             data-name="[테스트 테스트 테스트] 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트테 스트 테스 트테스트 테스트 트테스트 테스트 트테스트 테스트 트테스트 테스트"
+                            data-like=false
                         >
                             <h2 class="tit ellipsis2"><span class="sc_ico new">N</span> [테스트 테스트 테스트] 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트테 스트 테스 트테스트 테스트 트테스트 테스트 트테스트 테스트 트테스트 테스트</h2>
 
@@ -110,7 +127,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio2.mp3"
                             data-name="[테스트2 테스트2 테스트2] 테스트2 테스트2 테스트2 테스트2 테스트2 테스트2"
-
+                            data-like=true
                         >
                             <div class="sc_thumb">
                                 <div class="sc_thumb_img">
@@ -134,6 +151,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio2.mp3"
                             data-name="[테스트2 테스트2 테스트2] 테스트2 테스트2 테스트2 테스트2 테스트2 테스트2"
+                            data-like=true
                         >
                             <h2 class="tit ellipsis2"><span class="sc_ico new">N</span> [테스트2 테스트2 테스트2] 테스트2 테스트2 테스트2 테스트2 테스트2 테스트2</h2>
 
@@ -144,6 +162,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio3.mp3"
                             data-name="[테스트3 테스트3 테스트3] 테스트3 테스트3 테스트3 테스트3 테스트3 테스트3"
+                            data-like=true
                         >
                             <div class="sc_thumb">
                                 <div class="sc_thumb_img">
@@ -167,6 +186,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio3.mp3"
                             data-name="[테스트3 테스트3 테스트3] 테스트3 테스트3 테스트3 테스트3 테스트3 테스트3"
+                            data-like=true
                         >
                             <h2 class="tit ellipsis2"><span class="sc_ico new">N</span> [테스트3 테스트3 테스트3] 테스트3 테스트3 테스트3 테스트3 테스트3 테스트3</h2>
 
@@ -177,6 +197,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio5.mp3"
                             data-name="[테스트4 테스트4 테스트4] 테스트4 테스트4 테스트4 테스트4 테스트4 테스트4"
+                            data-like=true
                         >
                             <div class="sc_thumb">
                                 <div class="sc_thumb_img">
@@ -200,6 +221,7 @@
                             onclick="playAudio_sep(this);"
                             data-url="./audio/audio5.mp3"
                             data-name="[테스트4 테스트4 테스트4] 테스트4 테스트4 테스트4 테스트4 테스트4 테스트4"
+                            data-like=true
                         >
                             <h2 class="tit ellipsis2"><span class="sc_ico new">N</span> [테스트4 테스트4 테스트4] 테스트4 테스트4 테스트4 테스트4 테스트4 테스트4</h2>
 
@@ -286,7 +308,7 @@
                 </button>
             </div>
             <label class="btn_like">
-                <input type="checkbox" class="btn_like_chk">
+                <input type="checkbox" id="audio_like" class="btn_like_chk">
                 <i class="ico_like"></i>
                 <span class="blind">좋아요</span>
             </label>
