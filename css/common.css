@@ -700,9 +700,11 @@
 
 #container.ty_audio_ssok { padding-top: 40px; }
 
-#header.header ~ #container { padding-top: 181px; }
+#header.header ~ #container.sub_m { padding-top: 181px; }
 
-#header.sub_header ~ #container { padding-top: 60px; }
+#header.sub_header ~ #container.sub_m { padding-top: 60px; }
+
+#header.sub_header ~ #container.sub_m.ty_audio_ssok { padding-top: 40px; }
 
 .header { background-color: #fff; position: absolute; z-index: 9999; width: 100%; left: 0; top: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
 

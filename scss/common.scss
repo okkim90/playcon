@@ -47,11 +47,14 @@
         padding-top: 40px;
     }
 
-    @at-root #header.header ~ & {
+    @at-root #header.header ~ &.sub_m {
         padding-top: 181px;
     }
-    @at-root #header.sub_header ~ & {
+    @at-root #header.sub_header ~ &.sub_m {
         padding-top: 60px;
+        &.ty_audio_ssok {
+            padding-top: 40px;
+        }
     }
 }
 
