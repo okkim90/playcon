@@ -418,7 +418,7 @@
 
 .audio_player.on { opacity: 1; z-index: 999; visibility: visible; }
 
-.audio_player.minimal .controls { height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.audio_player.minimal .controls { height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 10px; padding-left: 40px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .audio_player.minimal .controls .time { display: none; }
 
@@ -433,6 +433,16 @@
 .audio_player.minimal .controls .btn_maximal { display: block; margin-left: 10px; -ms-flex-negative: 0; flex-shrink: 0; }
 
 .audio_player.minimal .full_tit { display: none; }
+
+.audio_player.minimal .btn_like { top: 12px; left: 8px; }
+
+.audio_player .btn_like { position: absolute; left: 10px; top: 10px; width: 24px; height: 24px; z-index: 99; cursor: pointer; }
+
+.audio_player .btn_like .btn_like_chk { position: absolute; z-index: -999; visibility: hidden; opacity: 0; }
+
+.audio_player .btn_like .btn_like_chk:checked ~ .ico_like { background-image: url(../images/ico/ico_heart2_on.svg); }
+
+.audio_player .btn_like .ico_like { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-size: 16px 14px; background-position: center center; background-image: url(../images/ico/ico_heart2.svg); }
 
 .audio_player .controls { background-color: #212121; padding: 3px 10px 10px; }
 
@@ -500,7 +510,7 @@
 
 .audio_player .slider .ui-slider-range { background: #1e90ff; left: -6px; }
 
-.audio_player .full_tit { display: block; padding: 20px 40px 20px 20px; background-color: #424242; position: relative; border-radius: 10px 10px 0 0; color: #fff; }
+.audio_player .full_tit { display: block; padding: 20px 40px 20px; background-color: #424242; position: relative; border-radius: 10px 10px 0 0; color: #fff; }
 
 .audio_player .full_tit_txt { font-size: 12px; line-height: 18px; max-height: 72px; }
 
