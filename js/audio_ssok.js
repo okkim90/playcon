@@ -1,7 +1,8 @@
 
         /* 리스트에서만 */
-
-        if(audios){
+        var audios;
+        console.log(audios);
+        if(audios !== undefined){
             for(let i = 0; i <audios.length; i++ ){
                 //console.log(audios[i].url);
                 let time;

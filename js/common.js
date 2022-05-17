@@ -11,85 +11,95 @@ $(function(){
     });
 
 
-    $('.btn_setting').on('click',function(){
-        var $setting_box = $(this).parent('.setting_set').find('.setting_box');
-        if($setting_box.hasClass('on')){
-            $setting_box.removeClass('on');
-        }else{
-            $setting_box.addClass('on');
-        }
-    });
-
-
-    var $tab_btn = $('.tab_set .tab_btns .tab_btn');
-    $tab_btn.on('click',function(){
-        var $idx = $(this).index();
-        var $tab_cont = $(this).parents('.tab_set').find('.tab_cont');
-        //console.log($idx);
-        $(this).addClass('on').siblings('.tab_btn').removeClass('on');
-        $tab_cont.eq($idx).addClass('on').siblings('.tab_cont').removeClass('on');
-    });
 
     winH();
-
     $(window).on('load resize scroll',function(){
         winH();
     });
 
 
-
-    $('.byteLimit').on('keyup', function(){
-        var thisObject = $(this);
-        var limit = thisObject.attr("limitbyte"); //제한byte를 가져온다.
-        var str = thisObject.val();
-        var strLength = 0;
-        var strTitle = "";
-        var strPiece = "";
-        var check = false;
-
-        if(str){
-            for (i = 0; i < str.length; i++){
-                var code = str.charCodeAt(i);
-                var ch = str.substr(i,1).toUpperCase();
-                //체크 하는 문자를 저장
-                strPiece = str.substr(i,1)
-
-                code = parseInt(code);
-
-                if ((ch < "0" || ch > "9") && (ch < "A" || ch > "Z") && ((code > 255) || (code < 0))){
-                    strLength = strLength + 3; //UTF-8 3byte 로 계산
-                }else{
-                    strLength = strLength + 1;
-                }
-
-                if(strLength>limit){ //제한 길이 확인
-                    check = true;
-                    break;
-                }else{
-                    strTitle = strTitle+strPiece; //제한길이 보다 작으면 자른 문자를 붙여준다.
-                }
-                    $(this).siblings('.byte_out').html(
-                        '<span class="fc_purple">'+strLength+'</span> / '+limit+'byte'
-                    );
-                }
-
-            }else{
-                $(this).siblings('.byte_out').html(
-                    '<span class="fc_purple">0</span> / '+limit+'byte'
-                );
+    var mv = new Swiper('.mv',{
+        speed:600,
+        slidesPerView:3,
+        loop:true,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction:false
+        },
+        navigation: {
+            nextEl: '.mv_next',
+            prevEl: '.mv_prev'
+        },
+        pagination: {
+            clickable:true,
+            el: '.mv_pagination'
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView:1
             }
-
-
-
-        if(check){
-            alert("최대 "+limit+"byte 까지 입력 가능합니다.");
         }
-        thisObject.val(strTitle);
 
     });
 
+    var audio_slide = new Swiper('.main_audio_slide',{
+        slidesPerView:"auto",
+        spaceBetween: 40,
+        loop:true,
+        speed: 600,
+        freeMode: true,
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction:false
+        // },
 
+        breakpoints: {
+            1024: {
+
+            },
+            767: {
+                spaceBetween: 20,
+
+            }
+        }
+    });
+
+    var article_slide = new Swiper('.main_article_slide',{
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        loop:true,
+        speed: 600,
+        //freeMode: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction:false
+        },
+        breakpoints: {
+            1024: {
+
+            },
+            767: {
+                spaceBetween: 20,
+            }
+        }
+    });
+
+    resizeCont();
+    $(window).on('load resize',function(){
+        resizeCont();
+    });
 });
+
+
+function resizeCont(){
+    let ovH = $('.oc_vid_area').outerHeight();
+    $('.oc_list_area_inner').outerHeight(ovH);
+
+
+    let mtvH = $('.main_tv_vid_area').outerHeight();
+    $('.main_tv_list_area_inner').outerHeight(mtvH);
+}
+
 
 function winH(){
     $('.wihH').outerHeight($(window).height());
