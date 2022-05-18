@@ -3,13 +3,17 @@
         var audios;
         console.log(audios);
         if(audios !== undefined){
+            let total = 0;
+            let total_min;
+            let total_sec;
+            let total_time;
             for(let i = 0; i <audios.length; i++ ){
                 //console.log(audios[i].url);
                 let time;
                 let min;
                 let sec;
-                getDuration(audios[i].url, function(length) {
 
+                getDuration(audios[i].url, function(length) {
                     min = Math.floor(length/60);
                     sec = Math.floor(length%60);
                     if(min>0){
@@ -17,10 +21,23 @@
                     }else{
                         time = sec+'초';
                     }
-                    console.log(time);
                     document.querySelectorAll('.audioDu')[i].textContent = "총 " + time;
 
+
+                    total = total + Math.floor(length);
+                    total_min = Math.floor(total/60);
+                    total_sec = Math.floor(total%60);
+                    if(total_min>0){
+                        total_time = total_min +'분 ' + total_sec+'초';
+                    }else{
+                        total_time = total_sec+'초';
+                    }
+
+                    if(document.getElementById('total_playtime_box')){
+                        document.getElementById('total_playtime_box').textContent = "총 " + total_time;
+                    }
                 });
+
             }
         }
         /* // 리스트에서만 */
@@ -163,7 +180,7 @@
         var audio_like = document.getElementById('audio_like');
         function playAudio(val) {
             $('.audio_player').addClass('on');
-
+            $('#content').addClass('audio_play');
             play_type = 'list';
 
             var url = audios[val].url;
@@ -214,6 +231,7 @@
 
         function playAudio_sep(target){
             $('.audio_player').addClass('on');
+            $('#content').addClass('audio_play');
             play_type = 'oneonly';
             var $this = $(target);
             //var $audioData = $this.data('audio');

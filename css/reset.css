@@ -140,6 +140,7 @@ img {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
+	white-space: normal;
 }
 .ellipsis3 {
 	overflow: hidden;
@@ -147,6 +148,7 @@ img {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
+	white-space: normal;
 }
 .ellipsis4 {
 	overflow: hidden;
@@ -154,6 +156,7 @@ img {
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
+	white-space: normal;
 }
 .no_drag {
 	-webkit-touch-callout: none;
@@ -162,4 +165,21 @@ img {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.taC {
+	text-align: center;
+}
+.taL {
+	text-align: left;
+}
+.taR {
+	text-align: right;
+}
+
+.pt0 {
+	padding-top: 0 !important;
+}
+.pb0 {
+	padding-bottom: 0 !important;
 }

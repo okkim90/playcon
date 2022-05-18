@@ -18,49 +18,76 @@
 </head>
 <body>
     <div id="wrap">
-        <div id="content" class="sub_m">
-            <header id="header" class="sub_header">
-                <a href="" class="btn_back"><span class="blind">뒤로가기</span></a>
-                <h1 class="tit">오디오쏙</h1>
-            </header>
-            <div id="container" class="sub_m ty_audio_ssok">
-                <div class="audio_ssok">
-                    <div class="audio_ssok_top">
-                        <div class="audio_ssok_top_inner">
-                            <div class="img_box">
-                                <div class="sc_thumb ty2">
-                                    <div class="sc_thumb_img">
-                                        <img src="https://kids.dongascience.com/upload/issue/2022/03/16481722579798.png" alt="">
-                                    </div>
+        <div id="content">
+            <header id="header" class="header">
+                <div class="header_top">
+                    <div class="header_top_inner">
+                        <h1 class="logo">
+                            <a href="">
+                                <span class="blind">플레이콘</span>
+                                <img src="./images/common/logo.png" alt="플레이콘">
+                            </a>
+                        </h1>
+                        <div class="header_util">
+                            <a href="" class="btn_mypage"><span class="blind">마이페이지</span></a>
+
+                            <!--로그아웃 상태-->
+                            <button type="button" class="btn_sign ty_logout">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그인</span>
+                            </button>
+                            <!--// 로그아웃 상태-->
+                            <!-- 로그인 상태-->
+                            <!--
+                            <button type="button" class="btn_sign ty_login">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그아웃</span>
+                            </button>
+                            -->
+                            <!--// 로그인 상태-->
+
+                            <!-- 햄버거버튼 삭제
+                            <button type="button" class="btn_lm">
+                                <span class="blind">전체메뉴</span>
+                                <div class="bar_box">
+                                    <span class="bar top"></span>
+                                    <span class="bar mid"></span>
+                                    <span class="bar bot"></span>
                                 </div>
-                            </div>
-                            <div class="txt_box">
-                                <h1 class="logo">
-                                    <img src="./images/common/logo_kids_sci.svg" alt="">
-                                </h1>
-                                <h2 class="tit">
-                                    2022년 <br>
-                                    04월 01일 07호
-                                    <span class="vol">vol 423</span>
-                                </h2>
-                                <div class="btn_box">
-                                    <span class="total_playtime">
-                                        <i><img src="./images/ico/ico_clock.svg" alt=""></i>
-                                        <span id="total_playtime_box">총 00분 00초</span>
-                                    </span>
-                                    <button type="button" class="btn_playall" onclick="playAudio(0)">
-                                        전체재생
-                                        <i><img src="./images/ico/ico_play_w.svg" alt=""></i>
-                                    </button>
-                                </div>
-                            </div>
+                            </button>
+                            -->
                         </div>
-
-                        <div class="bg_box" style="background-image:url('https://kids.dongascience.com/upload/issue/2022/03/16481722579798.png');"></div>
-
-
                     </div>
-                    <div class="audio_ssok_cont sub_inner ">
+                </div>
+                <div class="nav_area">
+                    <nav id="nav" class="nav">
+                        <ul class="nav_list">
+                            <li><a href=""><span>어과동</span></a></li>
+                            <li><a href=""><span>어수동</span></a></li>
+                            <li><a href=""><span>오디오쏙</span></a></li>
+                            <li><a href=""><span>어과수TV</span></a></li>
+                            <li><a href=""><span>놀이터</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div id="container" class="sub_m ">
+                <div class="menu_dep2 ">
+                    <ul class="menu_dep2_list">
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link ">함께 듣는 어과수</a>
+                        </li>
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link on">NEW</a>
+                        </li>
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link">BEST</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_wrap">
+                    <div class="sub_inner">
                         <ul class="audio_ssok_list">
                             <li class="audio_item">
                                 <div class="audio_thumb" onclick="playAudio(0);">
@@ -218,11 +245,28 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
-            </div>
-        </div>
 
+            </div>
+            <footer id="footer" class="footer">
+                <ul class="footer_menu">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">개인정보취급방침</a></li>
+                </ul>
+                <div class="footer_policy">
+                    <h2 class="footer_policy_tit">
+                        <button type="button" class="btn_policy">㈜동아사이언스 키즈 플랫폼 <i></i></button>
+                    </h2>
+                    <div class="txt_box">
+                        ㈜동아사이언스 팝콘플래닛, 스토리콘 | 대표 : 장경애 <br>
+                        개인정보관리책임자 : <span>김수희 (privacy@dongascience.com) |</span> <span>청소년보호책임자 : 조기견</span> <br><br>
+                        서울시 용산구 청파로 109, 7층 (04370) | 문의 : 02-6749-2000 ｜팩스 : 02-3148-0789  사업자등록번호 : 101-81-62201 (사업자정보확인) | 통신판매업신고번호 : 제2013-서울용산-01101호 | 온라인 결제를 위한 PG사의 구매안전서비스(가입사실 확인)
+                    </div>
+                </div>
+                <p class="copy">Copyright © Dongascience. All right reserved.</p>
+            </footer>
+        </div>
     </div>
     <!--
         //audio_player

@@ -64,6 +64,8 @@ $(function(){
         }
     });
 
+
+
     var article_slide = new Swiper('.main_article_slide',{
         slidesPerView: "auto",
         spaceBetween: 40,
@@ -88,6 +90,14 @@ $(function(){
     $(window).on('load resize',function(){
         resizeCont();
     });
+
+    $(window).on('load',function(){
+        if($('.audio_player').hasClass('on')){
+            $('#content').addClass('audio_play');
+        }else{
+            $('#content').removeClass('audio_play');
+        }
+    })
 });
 
 

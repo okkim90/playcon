@@ -125,7 +125,8 @@
         }
     }
     &_cont {
-        padding: 29px 20px;
+        padding-top: 29px;
+        padding-bottom: 50px;
     }
 
     &_list {
@@ -626,6 +627,114 @@
   }
 
 
+
+/* 오디오쏙 메인 */
+.asm_sec {
+    & + & {
+        margin-top: 30px;
+    }
+    &.asm_new {
+        padding: 30px 0 20px;
+        background-color: rgba(70, 184, 255, 0.1);
+    }
+    &.bot_banner {
+        margin-top: 36px;
+    }
+    .sub_audio_slide {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-right: -20px;
+
+        .sub_audio_list {
+            white-space: nowrap;
+            font-size: 0;
+        }
+        .sub_audio_item {
+            margin-right: 20px;
+            display: inline-block;
+            width: 36%;
+            vertical-align: top;
+            .txt_box {
+                margin-top: 5px;
+                .tit {
+                    font-size: 12px;
+                    line-height: 18px;
+                    max-height: 36px;
+                    letter-spacing: -0.12px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+
+    .sub_audio_list2 {
+        margin-right: -20px;
+        .sub_audio_item {
+            & + .sub_audio_item {
+                margin-top: 20px;
+            }
+            &_btn {
+                display: flex;
+                align-items: center;
+
+            }
+            .audio_thumb {
+                width: 36%;
+            }
+            .rank {
+                width: 35px;
+                flex-shrink: 0;
+                text-align: center;
+                font-size: 16px;
+                font-family: Arial;
+                font-weight: 900;
+                color: map-get($colors, blue);
+            }
+            .txt_box {
+                flex: 1;
+                min-width: 0;
+                padding-right: 20px;
+                .tit {
+                    font-size: 13px;
+                    line-height: 18px;
+                    max-height: 54px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    &_tit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        margin-bottom: 20px;
+        .tit {
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: -0.43px;
+            span {
+                font-weight: normal;
+            }
+            .img_logo {
+                height: 32px;
+                margin-left: 5px;
+                vertical-align: middle;
+            }
+        }
+        .view_more {
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/ico/ico_arrow_l.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 6px;
+        }
+    }
+}
 
 
 
