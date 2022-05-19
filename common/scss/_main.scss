@@ -186,7 +186,7 @@
             i {
                 width: 15px;
                 height: 14px;
-                background: url(../images/ico/ico_vote.svg) no-repeat center center;
+                background: url(../../images/ico/ico_vote.svg) no-repeat center center;
                 margin-left: 5px;
             }
         }
@@ -202,7 +202,7 @@
             top: 0;
             width: 30px;
             height: 100%;
-            background-image: url(../images/ico/ico_arrow_l.svg);
+            background-image: url(../../images/ico/ico_arrow_l.svg);
             background-repeat: no-repeat;
             background-size: 11px;
             background-position: center center;
@@ -408,7 +408,7 @@
             display: inline-block;
             vertical-align: top;
             padding-right: 14px;
-            background: url(../images/ico/ico_arrow_next_s.svg) no-repeat right 55%;
+            background: url(../../images/ico/ico_arrow_next_s.svg) no-repeat right 55%;
         }
 
         @at-root .vote_box.on & {
@@ -416,7 +416,7 @@
             color: #fff;
             border-top: 1px solid rgba(30, 144, 255, 0.5);
             span {
-                background-image: url(../images/ico/ico_arrow_next_s_w.svg);
+                background-image: url(../../images/ico/ico_arrow_next_s_w.svg);
             }
         }
 
@@ -761,7 +761,7 @@
                     transform: translateY(-50%);
                     width: 6px;
                     height: 10px;
-                    background-image: url(../images/ico/ico_arrow_next_s.svg);
+                    background-image: url(../../images/ico/ico_arrow_next_s.svg);
                     background-repeat: no-repeat;
                     background-position: center center;
                 }

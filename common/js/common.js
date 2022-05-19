@@ -1,3 +1,33 @@
+function SetNum(obj){
+    val=obj.value;
+    re=/[^0-9]/gi;
+    obj.value=val.replace(re,"");
+}
+
+function zeroPad(src) {
+    var args = arguments;
+    var size = 2;
+    if(args.length > 1) {
+        size = args[1];
+    }
+    var strLen = (isNaN(src) ? src.length : src.toString().length);
+    size -= strLen;
+    var zero = "";
+    for(var i=0; i < size; i++) {
+        zero += "0";
+    }
+    return zero + src;
+}
+
+function dateFormat(date) {
+    var args = arguments;
+    var sep = "-";
+    if(args.length > 1) {
+        sep = args[1];
+    }
+    return date.getFullYear() + sep + zeroPad(date.getMonth() + 1) + sep + zeroPad(date.getDate());
+}
+
 $(function(){
     var $footer_policy = $('.footer_policy');
     $('.btn_policy').on('click',function(){

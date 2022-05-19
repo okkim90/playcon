@@ -116,7 +116,7 @@
             display: block;
             width: 50px;
             height: 50px;
-            background: url(../images/ico/ico_mem_b.svg) no-repeat center center;
+            background: url(../../images/ico/ico_mem_b.svg) no-repeat center center;
 
         }
         .btn_lm {
@@ -169,12 +169,12 @@
                 background-size: 24px auto;
 
                 @at-root .ty_logout .btn_sign_ico {
-                    background-image: url(../images/ico/ico_sign.svg);
+                    background-image: url(../../images/ico/ico_sign.svg);
                 }
                 @at-root .ty_login .btn_sign_ico {
                     width: 50px;
                     height: 50px;
-                    background-image: url(../images/ico/ico_sign_on.svg);
+                    background-image: url(../../images/ico/ico_sign_on.svg);
                 }
             }
             @at-root .ty_login .btn_sign_txt {
@@ -410,7 +410,7 @@
                     position: absolute;
                     width: 12px;
                     height: 7px;
-                    background-image: url(../images/ico/ico_open.svg);
+                    background-image: url(../../images/ico/ico_open.svg);
                     background-repeat: no-repeat;
                     background-position: center center;
                     right: 12px;
@@ -505,9 +505,9 @@
         height: 40px;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url(../images/ico/ico_save.svg);
+        background-image: url(../../images/ico/ico_save.svg);
         &.white {
-            background-image: url(../images/ico/ico_save_w.svg);
+            background-image: url(../../images/ico/ico_save_w.svg);
         }
     }
 
@@ -516,17 +516,17 @@
         vertical-align: top;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url(../images/ico/ico_write.svg);
+        background-image: url(../../images/ico/ico_write.svg);
         &.white {
-            background-image: url(../images/ico/ico_write_w.svg);
+            background-image: url(../../images/ico/ico_write_w.svg);
         }
     }
     &_back {
         width: 40px;
         height: 40px;
-        background: url(../images/ico/arrow_r.svg) no-repeat center center;
+        background: url(../../images/ico/arrow_r.svg) no-repeat center center;
         &.black {
-            background-image: url(../images/ico/arrow_l_b.svg);
+            background-image: url(../../images/ico/arrow_l_b.svg);
         }
     }
     &_mid {
@@ -565,7 +565,7 @@
             width: 100%;
             line-height: 30px;
             font-size: 14px;
-            background-image: url(../images/ico/arrow_more.svg);
+            background-image: url(../../images/ico/arrow_more.svg);
             background-repeat: no-repeat;
             background-position: right 55%;
         }
@@ -590,7 +590,7 @@
             line-height: 28px;
             font-size: 13px;
             letter-spacing: -0.4px;
-            background-image: url(../images/ico/arrow_more.svg);
+            background-image: url(../../images/ico/arrow_more.svg);
             background-repeat: no-repeat;
             background-position: right 55%;
         }
@@ -606,7 +606,7 @@
             display: block;
             padding-left: 17px;
             line-height: 34px;
-            background: url(../images/ico/ico_pen.svg) no-repeat 0 center;
+            background: url(../../images/ico/ico_pen.svg) no-repeat 0 center;
 
         }
     }
@@ -705,7 +705,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: url('../images/ico/arrow_l_b.svg') no-repeat center center;
+        background: url('../../images/ico/arrow_l_b.svg') no-repeat center center;
     }
 
 }
@@ -735,7 +735,7 @@
         border-radius: 8px;
         overflow: hidden;
         background-color: #eee;
-        background-image: url(../images/common/logo.png);
+        background-image: url(../../images/common/logo.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50%;
@@ -788,11 +788,11 @@
             }
             &.ct_view {
                 padding-left: 10px;
-                background-image: url(../images/ico/ico_ct_play.svg);
+                background-image: url(../../images/ico/ico_ct_play.svg);
             }
             &.ct_like {
                 padding-left: 13px;
-                background-image: url(../images/ico/ico_ct_like.svg);
+                background-image: url(../../images/ico/ico_ct_like.svg);
             }
         }
     } // .sc_thumb_info
@@ -1274,7 +1274,7 @@
             background-color: #fff;
             .header_top {
                 .logo {
-                    background-image: url(../images/LOGO.png);
+                    background-image: url(../../images/LOGO.png);
                 }
             }
             .nav_area {
@@ -1284,7 +1284,7 @@
             }
             .header_util {
                 .btn_mypage {
-                    background-image: url(../images/ico/ico_mem_b.svg);
+                    background-image: url(../../images/ico/ico_mem_b.svg);
                 }
                 .btn_lm {
                     .bar_box .bar {

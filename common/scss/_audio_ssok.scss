@@ -165,7 +165,7 @@
                         position: absolute;
                         width: 15px;
                         height: 15px;
-                        background-image: url(../images/ico/ico_clock_blue.svg);
+                        background-image: url(../../images/ico/ico_clock_blue.svg);
                         background-repeat: no-repeat;
                         background-position: center center;
                         left: 0;
@@ -274,7 +274,7 @@
             visibility: hidden;
             opacity: 0;
             &:checked ~ .ico_like {
-                background-image: url(../images/ico/ico_heart2_on.svg);
+                background-image: url(../../images/ico/ico_heart2_on.svg);
             }
         }
         .ico_like {
@@ -284,7 +284,7 @@
             background-repeat: no-repeat;
             background-size: 16px 14px;
             background-position: center center;
-            background-image: url(../images/ico/ico_heart2.svg);
+            background-image: url(../../images/ico/ico_heart2.svg);
         }
 
     }
@@ -335,10 +335,10 @@
                 background-position: center center;
                 background-size: cover;
                 &.play {
-                    background-image: url(../images/ico/ico_play2.svg);
+                    background-image: url(../../images/ico/ico_play2.svg);
                 }
                 &.pause {
-                    background-image: url(../images/ico/ico_pause.svg);
+                    background-image: url(../../images/ico/ico_pause.svg);
                 }
             }
             .control_box_btns {
@@ -358,13 +358,13 @@
                     display: inline-block;
                 }
                 &.btn_rewind {
-                    background-image: url(../images/ico/ico_rewind.svg);
+                    background-image: url(../../images/ico/ico_rewind.svg);
                     .sec {
                         margin-left: -2px;
                     }
                 }
                 &.btn_forward {
-                    background-image: url(../images/ico/ico_forward.svg);
+                    background-image: url(../../images/ico/ico_forward.svg);
                     .sec {
                         margin-left: 1px;
                     }
@@ -535,7 +535,7 @@
     .btn_toggle_size {
         width: 24px;
         height: 24px;
-        background-image: url(../images/ico/ico_arrow_open.svg);
+        background-image: url(../../images/ico/ico_arrow_open.svg);
         background-repeat: no-repeat;
         background-position: center center;
         &.btn_minimal {
@@ -728,7 +728,7 @@
         .view_more {
             width: 20px;
             height: 20px;
-            background-image: url(../images/ico/ico_arrow_l.svg);
+            background-image: url(../../images/ico/ico_arrow_l.svg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 6px;
