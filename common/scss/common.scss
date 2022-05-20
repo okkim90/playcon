@@ -573,30 +573,7 @@
         }
 
     }
-    &_more2 {
-        display: inline-block;
-        vertical-align: top;
-        flex-shrink: 0;
-        padding: 0 12px 0 13px;
-        box-sizing: border-box;
-        background-color: #fff;
-        height: 30px;
-        border-radius: 15px;
-        border: 1px solid #ccc;
-        span {
-            position: relative;
-            display: block;
-            width: 100%;
-            padding-right: 12px;
-            box-sizing: border-box;
-            line-height: 28px;
-            font-size: 13px;
-            letter-spacing: -0.4px;
-            background-image: url(/images/ico/arrow_more.svg);
-            background-repeat: no-repeat;
-            background-position: right 55%;
-        }
-    }
+
     &_write2 {
         padding: 0 15px;
         border-radius: 6px;
@@ -770,7 +747,7 @@
         display: inline-block;
         vertical-align: top;
         border: 1px solid rgba(30, 144, 255, 0.5);
-        border-radius: 0 4px 4px 4px;
+        border-radius: 0 8px 8px 8px;
         line-height: 28px;
         padding: 0 8px;
         font-size: 12px;
@@ -794,6 +771,25 @@
         font-size: 13px;
         box-sizing: border-box;
         border-radius: 4px;
+    }
+
+    &_epi_list {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 10px;
+        border: 1px solid map-get($colors,blue);
+        border-radius: 4px;
+        height: 30px;
+
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: bold;
+        color: map-get($colors,blue);
+        span {
+            display: block;
+            padding-right: 20px;
+            background: url(../../images/ico/arrow_bot.svg) no-repeat right 55%;
+        }
     }
 }
 
@@ -923,6 +919,28 @@
                 padding-left: 11px;
                 background-image: url(../../images/ico/ico_ct_co.svg);
                 background-position: 0 60%;
+            }
+        }
+
+        &.ty_inside {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.2);
+            border-radius: 0 8px 8px 0;
+            z-index: 10;
+            padding: 0 8px;
+            height: 16px;
+            .sc_thumb_info_item {
+                line-height: 15px;
+                color: #fff;
+                &.ct_co {
+                    background-image: url(../../images/ico/ico_ct_co_w.svg);
+                }
+                &.ct_like {
+                    background-image: url(../../images/ico/ico_ct_like_w.svg);
+                    background-position: 0 50%;
+                }
             }
         }
     } // .sc_thumb_info
@@ -1090,6 +1108,78 @@
         text-align: center;
     }
 }
+
+
+.layer_popup {
+    display: none;
+    position: fixed;
+
+    z-index: 9999;
+
+    &.on {
+        display: block;
+    }
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .4);
+    left: 0;
+    top: 0;
+
+
+    .layer_popup_inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .list_epi_wrap {
+        max-height: 100%;
+        max-width: 100%;
+        position: relative;
+        width: 700px;
+        .list_epi {
+            max-height: 80vh;
+            border-radius: 8px;
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+            background-color: #fff;
+        }
+
+    }
+    .close_popup {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: -10px;
+        top: -40px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: #fff;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            background-color: #fff;
+        }
+    }
+}
+
 
 
 .asm_banner {
@@ -1502,6 +1592,12 @@
         }
     }
     .btn {
+        &_area {
+            &.ty_bot {
+                margin-top: 20px;
+            }
+        }
+
         &_more {
             padding: 0;
             background-color: transparent;

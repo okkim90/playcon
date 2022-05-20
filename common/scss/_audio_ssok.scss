@@ -311,6 +311,7 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+                cursor: pointer;
                 &.play {
                     background-image: url(../../images/ico/ico_play2.svg);
                 }
@@ -651,7 +652,7 @@
             & + .sub_audio_item {
                 margin-top: 20px;
             }
-            &_btn {
+            .audio_item_btn {
                 display: flex;
                 align-items: center;
 

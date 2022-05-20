@@ -188,55 +188,17 @@ function winH(){
     $('.minWihH').css({'min-height':$(window).height() - 130});
 }
 
-function filebox(target){
+
+
+
+//레이어 팝업 닫기
+function close_popup(target){
     var $this = $(target);
-    var $val = $this.val();
-    $this.parents('.file_box').find('.file_box_txt').val($val);
-    if($this.is('#upload_bg')){
-        $('#btn_upload_bg').data('bg',$val);
-    }
-    if($this.is('#upload_cha')){
-        $('#btn_upload_cha').data('chaImg',$val);
-    }
+    $this.parents('.layer_popup').removeClass('on');
 }
 
-function li_edit(target){
-    var $this = $(target);
-    var $li_edit_box = $this.parents('.li_edit_box');
-
-    if($li_edit_box.hasClass('on')){
-        $li_edit_box.removeClass('on');
-    }else{
-        $('.li_edit_box').removeClass('on');
-        $li_edit_box.addClass('on');
-    }
-
-    $(document).click(function(e) {
-        if (!$(e.target).is('.li_edit_box, .li_edit_box *')) {
-            $('.li_edit_box').removeClass('on');
-        }
-    });
+//레이어 팝업 열기
+function open_popup(target){
+    let popupName = $(target).data('popup');
+    $('.layer_popup.'+popupName).addClass('on');
 }
-
-function close_li_edit(target){
-    var $this = $(target);
-    var $li_edit_box = $this.parents('.li_edit_box');
-    $li_edit_box.removeClass('on');
-}
-
-function close_setting_set(target){
-    var $this = $(target);
-    var $setting_set = $this.parents('.setting_box');
-    $setting_set.removeClass('on');
-}
-
-function edit_name(target){
-    var $this = $(target);
-    $('.name_set').removeClass('on');
-    if($this.is(":checked")){
-        $('.name_set.ty_nickname').addClass('on');
-    }else{
-        $('.name_set.ty_name').addClass('on');
-    }
-}
-

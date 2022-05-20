@@ -10,6 +10,9 @@
         padding: 0 10px;
         box-sizing: border-box;
         margin-top: 30px;
+        &_link {
+            cursor: pointer;
+        }
         .txt_box {
             margin-top: 10px;
             .tit {
@@ -21,8 +24,22 @@
                 line-height: 22px;
                 max-height: 44px;
             }
+            @at-root .pp_gallery.ty_webtoon & {
+                margin-top: 0;
+                padding: 12px 15px;
+                border: 1px solid rgba(0, 0, 0, 0.07);
+                border-radius: 0 0 8px 8px;
+                word-break: normal;
+            }
+        }
+        .epi_list_wrap {
+            display: none;
         }
     }
+    &.ty_webtoon .sc_thumb_img {
+        border-radius: 8px 8px 0 0;
+    }
+
 }
 
 .pp_list {
@@ -53,6 +70,48 @@
 }
 
 
+.list_epi {
+
+    &_item {
+        & + & {
+            border-top: 1px solid #e5e5e5;
+        }
+    }
+    &_link {
+        display: flex;
+        align-items: center;
+        padding: 0 50px 0 10px;
+        position: relative;
+        .tit {
+            min-width: 0;
+            font-size: 13px;
+            line-height: 50px;
+            padding-right: 10px;
+        }
+        .info_co {
+            flex-shrink: 0;
+            font-size: 10px;
+            padding-left: 12px;
+            background-image: url(../../images/ico/ico_ct_co.svg);
+            background-position: 0 center;
+            background-repeat: no-repeat;
+            color: #666;
+        }
+        .ico_arrow {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40px;
+            height: 100%;
+            background-image: url(../../images/ico/ico_arrow_l.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+    }
+
+}
+
 
 
 @media (max-width:767px) {
@@ -67,6 +126,9 @@
                     font-size: 13px;
                     line-height: 18px;
                     max-height: 36px;
+                }
+                @at-root .pp_gallery.ty_webtoon & {
+                    padding: 8px 9px;
                 }
             }
         }
