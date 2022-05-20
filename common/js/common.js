@@ -127,7 +127,49 @@ $(function(){
         }else{
             $('#content').removeClass('audio_play');
         }
-    })
+    });
+
+
+
+
+
+    $('.toggle_tab').on('click',function(){
+        var $tabs = $(this).parents('.select_sticker').find('.tabs');
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            $tabs.removeClass('on');
+        }else{
+            $(this).addClass('on');
+            $tabs.addClass('on');
+        }
+    });
+
+    $('.tab_btn').on('click',function(){
+        var $idx = $(this).index();
+        //console.log($idx);
+        $(this)
+            .addClass('on')
+            .siblings('.tab_btn')
+            .removeClass('on');
+        $(this)
+            .parents('.tabs')
+            .find('.sticker_set')
+            .eq($idx)
+            .addClass('on')
+            .siblings('.sticker_set')
+            .removeClass('on');
+    });
+
+    $('.btn_reply').on('click',function(){
+        var $reply_set = $(this).parents('.comment_set').find('.comment_reply');
+        if($reply_set.hasClass('on')){
+            $reply_set.removeClass('on')
+        }else{
+            $reply_set.addClass('on')
+        }
+
+    });
+
 });
 
 

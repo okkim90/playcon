@@ -264,29 +264,6 @@
         position: absolute;
         left: 10px;
         top: 10px;
-        width: 24px;
-        height: 24px;
-        z-index: 99;
-        cursor: pointer;
-        .btn_like_chk {
-            position: absolute;
-            z-index: -999;
-            visibility: hidden;
-            opacity: 0;
-            &:checked ~ .ico_like {
-                background-image: url(../../images/ico/ico_heart2_on.svg);
-            }
-        }
-        .ico_like {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-size: 16px 14px;
-            background-position: center center;
-            background-image: url(../../images/ico/ico_heart2.svg);
-        }
-
     }
 
     .controls {

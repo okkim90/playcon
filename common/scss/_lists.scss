@@ -25,6 +25,33 @@
     }
 }
 
+.pp_list {
+    &_item {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+    &_link {
+        display: flex;
+        align-items: center;
+    }
+    &_thumb {
+        width: 106px;
+        flex-shrink: 0;
+    }
+    &_txt {
+        flex: 1;
+        min-width: 0;
+        padding-left: 10px;
+        .tit {
+            font-size: 13px;
+            line-height: 18px;
+            max-height: 36px;
+            letter-spacing: -0.13px;
+        }
+    }
+}
+
 
 
 
