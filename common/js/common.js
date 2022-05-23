@@ -170,6 +170,17 @@ $(function(){
 
     });
 
+    $('.checklist_limit').each(function(){
+        var $checkbox = $(this).find('.checkbox_limit');
+        var $limit = $(this).data('limit');
+        $checkbox.on('change',function(){
+            if($checkbox.filter(":checked").length > $limit){
+                this.checked = false;
+                alert('해당 투표항목은 최대 '+ $limit+ '개까지 선택할 수 있습니다.')
+            }
+        });
+    })
+
 });
 
 
@@ -202,3 +213,15 @@ function open_popup(target){
     let popupName = $(target).data('popup');
     $('.layer_popup.'+popupName).addClass('on');
 }
+
+
+//글자수 체크
+function countChar(val,limit) {
+    var len = val.value.length;
+    if (len >= limit) {
+        val.value = val.value.substring(0, limit);
+        $(val).siblings('.limit_info').find('.current').html(limit);
+    } else {
+        $(val).siblings('.limit_info').find('.current').html(len);
+    }
+};

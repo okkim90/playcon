@@ -802,6 +802,57 @@
 
 .vp_nav_link p { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; min-width: 0; }
 
+.sub_vote_box { padding: 20px; border: 1px solid rgba(30, 144, 255, 0.5); border-radius: 8px; }
+
+.sub_vote_box ~ .pp_gallery { margin-top: 23px; }
+
+.sub_vote_top { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.sub_vote_top .img_box { width: 50%; }
+
+.sub_vote_top .txt_box { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-left: 20px; }
+
+.sub_vote_top .txt_box .status { display: inline-block; vertical-align: top; padding: 0 10px; line-height: 24px; border: 1px solid #1e90ff; border-radius: 13px; color: #1e90ff; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+
+.sub_vote_top .txt_box .tit { display: block; font-size: 16px; line-height: 1.38; font-weight: bold; }
+
+.sub_vote_top .txt_box .sub_vote_desc { margin: 10px 0; font-size: 14px; line-height: 1.36; }
+
+.sub_vote_top .txt_box .period_box { font-size: 12px; line-height: 1.42; margin-top: 5px; }
+
+.sub_vote_top .txt_box .period_box .period_box_cont { display: inline-block; color: #666; }
+
+.sub_vote_top .txt_box .btn_enter { margin-top: 20px; display: inline-block; padding: 0 10px; height: 36px; line-height: 36px; color: #fff; background-color: #1e90ff; border-radius: 8px; font-size: 12px; font-weight: 500; letter-spacing: -0.4px; white-space: nowrap; }
+
+.sub_vote_top .txt_box .btn_enter span { display: block; padding-right: 14px; background: url(../../images/ico/ico_arrow_l_w.svg) no-repeat right 52%; }
+
+.sub_vote_top .txt_box .sub_vote_items { display: block; }
+
+.sub_vote_items { margin-top: 20px; display: none; }
+
+.sub_vote_items_tit { font-size: 16px; line-height: 1.38; font-weight: bold; }
+
+.sub_vote_items_cont { font-size: 13px; line-height: 1.38; margin-top: 5px; }
+
+.sub_vote_items_cont + .sub_vote_items_tit { margin-top: 20px; }
+
+.sub_vote_set { margin-top: 20px; padding: 20px; border: 1px solid rgba(30, 144, 255, 0.5); border-radius: 8px; }
+
+.sub_vote_set_tit { display: block; font-size: 16px; line-height: 1.38; }
+
+.sub_vote_set_desc { font-size: 13px; line-height: 1.38; font-weight: 500; margin-top: 5px; margin-bottom: 10px; }
+
+.sub_vote_set_list li { font-size: 12px; line-height: 1.42; }
+
+.sub_vote_set_list li + li { margin-top: 10px; }
+
+.sub_vote_set_list li label { display: inline-block; vertical-align: top; padding-left: 18px; position: relative; cursor: pointer; }
+
+.sub_vote_set_list li label input[type="checkbox"] { position: absolute; left: 0; top: 3px; margin: 0; width: 13px; height: 13px; }
+
+@media (max-width: 740px) { .sub_vote_items { display: block; }
+  .sub_vote_top .txt_box .sub_vote_items { display: none; } }
+
 .fc_blue { color: #1e90ff; }
 
 .fc_red { color: #f00; }
@@ -947,6 +998,8 @@
 
 .btn_area.ty_bot2 { margin-top: 20px; }
 
+.btn_area.ty_bot3 { margin-top: 10px; }
+
 .btn_area.taC { text-align: center; }
 
 .btn_area.taR { text-align: right; }
@@ -973,9 +1026,9 @@
 
 .btn_back.black { background-image: url(/images/ico/arrow_l_b.svg); }
 
-.btn_mid { height: 36px; line-height: 34px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 6px; border: 1px solid #5e25c7; background-color: #5e25c7; text-align: center; padding: 0 15px; min-width: 120px; color: #fff; font-size: 13px; font-weight: 500; }
+.btn_mid { height: 36px; line-height: 34px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 8px; border: 1px solid #1e90ff; background-color: #1e90ff; text-align: center; padding: 0 15px; min-width: 80px; color: #fff; font-size: 13px; font-weight: 500; }
 
-.btn_mid.white { color: #5e25c7; background-color: #fff; }
+.btn_mid.white { color: #1e90ff; background-color: #fff; }
 
 .btn_more { display: inline-block; vertical-align: top; width: 80px; -ms-flex-negative: 0; flex-shrink: 0; padding: 0 12px 0 15px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #fff; height: 30px; border-radius: 15px; -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1); }
 
@@ -1025,7 +1078,9 @@
 
 .btn_audio_inner { padding-left: 26px; background-repeat: no-repeat; background-position: 0 center; background-image: url(../../images/ico/ico_audio.svg); }
 
-.btn_list { display: inline-block; vertical-align: top; height: 36px; line-height: 34px; background-color: #f5f5f5; border: 1px solid #e1e1e1; text-align: center; font-size: 13px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; }
+.btn_list { display: inline-block; vertical-align: top; height: 36px; line-height: 34px; background-color: #f5f5f5; border: 1px solid #e1e1e1; text-align: center; font-size: 13px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; font-weight: 500; }
+
+.btn_list.w100 { width: 100%; margin: 0; }
 
 .btn_epi_list { display: inline-block; vertical-align: top; padding: 0 10px; border: 1px solid #1e90ff; border-radius: 4px; height: 30px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 12px; font-weight: bold; color: #1e90ff; }
 
@@ -1149,7 +1204,21 @@
 
 .input_ty1 { width: 100%; height: 40px; border-radius: 3px; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 10px; color: #424242; outline: none; border-radius: 4px; }
 
-.ta_ty1 { width: 100%; height: 120px; padding: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 3px; border: 1px solid #ccc; box-sizing: border-box; color: #424242; outline: none; border-radius: 4px; }
+.ta_ty1 { width: 100%; height: 120px; padding: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 3px; border: 1px solid #ccc; box-sizing: border-box; color: #424242; outline: none; border-radius: 4px; font-size: 12px; line-height: 1.38; }
+
+.ta_ty1::-webkit-scrollbar { width: 4px; }
+
+.ta_ty1::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 2px; }
+
+.ta_ty1::-webkit-scrollbar-track { background-color: #f5f5f5; border-radius: 2px; }
+
+.limit_info { position: absolute; right: 5px; bottom: 1px; background-color: #fff; padding: 4px; border-radius: 4px; font-size: 10px; color: #ccc; }
+
+.limit_info_wrap { position: relative; }
+
+.limit_info_wrap .ta_ty1 { padding-bottom: 20px; }
+
+.limit_info .current { color: #777; }
 
 .sc_radio { display: inline-block; }
 
