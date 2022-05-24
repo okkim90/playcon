@@ -1248,6 +1248,37 @@
     }
 }
 
+
+.way_to_ptcp {
+    &_tit {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 22px;
+        background-color: #46b8ff;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+    &_cont {
+        display: flex;
+        .txt_box {
+            flex: 1;
+            font-size: 12px;
+            line-height: 1.42;
+            color: #666;
+            padding-right: 20px;
+        }
+        .img_box {
+            width: 70px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 .input {
     &_ty1 {
         width: 100%;

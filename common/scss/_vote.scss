@@ -140,6 +140,14 @@
     padding: 20px;
     border: 1px solid rgba(30, 144, 255, 0.5);
     border-radius: 8px;
+    &_wrap {
+        .sub_vote_set {
+            margin-top: 0;
+            & + .sub_vote_set {
+                margin-top: 20px;
+            }
+        }
+    }
 
     &.ended {
         border-color: #e5e5e5;
@@ -149,12 +157,25 @@
         display: block;
         font-size: 16px;
         line-height: 1.38;
+        font-weight: normal;
+        .fc_blue {
+            font-weight: bold;
+        }
     }
     &_desc {
         font-size: 13px;
         line-height: 1.38;
         font-weight: 500;
         margin-top: 5px;
+        &.ty2 {
+            margin-top: 10px;
+        }
+    }
+    .way_to_ptcp {
+        margin-top: 20px;
+        & ~ .sub_vote_set_cont {
+            margin-top: 15px;
+        }
     }
     &_cont {
         margin-top: 10px;
