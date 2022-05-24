@@ -217,7 +217,22 @@ $(function(){
         $count.width(max_width);
     });
 
+    dep2Scroll();
+    $(window).on('load resize',function(){
+        dep2Scroll();
+    });
 });
+
+
+function dep2Scroll(){
+    if($('.menu_dep2_list').length > 0){
+        var li_item = $('.menu_dep2_link.on').parents('.menu_dep2_item');
+        var li_pos = li_item.position().left;
+        //console.log(li_pos);
+        $('.menu_dep2_list').animate({'scrollLeft':li_pos},0);
+    }
+
+}
 
 
 function resizeCont(){
