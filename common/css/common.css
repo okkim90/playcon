@@ -814,6 +814,8 @@
 
 .sub_vote_top .txt_box .status { display: inline-block; vertical-align: top; padding: 0 10px; line-height: 24px; border: 1px solid #1e90ff; border-radius: 13px; color: #1e90ff; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
 
+.sub_vote_top .txt_box .status.ended { border-color: #ccc; background-color: #ccc; color: #fff; }
+
 .sub_vote_top .txt_box .tit { display: block; font-size: 16px; line-height: 1.38; font-weight: bold; }
 
 .sub_vote_top .txt_box .sub_vote_desc { margin: 10px 0; font-size: 14px; line-height: 1.36; }
@@ -836,19 +838,33 @@
 
 .sub_vote_items_cont + .sub_vote_items_tit { margin-top: 20px; }
 
+.progress_wrap .progress { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.progress_wrap .progress .bar { position: relative; height: 8px; background-color: #46b8ff; border-radius: 4px; }
+
+.progress_wrap .progress .bar .rank { position: absolute; width: 24px; height: 24px; font-size: 11px; line-height: 24px; color: #fff; font-weight: bold; border-radius: 50%; background-color: #46b8ff; right: 0; top: 50%; margin-top: -12px; text-align: center; letter-spacing: -0.4px; }
+
+.progress_wrap .progress .vote_count { -ms-flex-negative: 0; flex-shrink: 0; font-size: 12px; font-weight: bold; color: #46b8ff; padding-left: 8px; white-space: nowrap; }
+
 .sub_vote_set { margin-top: 20px; padding: 20px; border: 1px solid rgba(30, 144, 255, 0.5); border-radius: 8px; }
+
+.sub_vote_set.ended { border-color: #e5e5e5; background-color: #fbfbfb; }
 
 .sub_vote_set_tit { display: block; font-size: 16px; line-height: 1.38; }
 
-.sub_vote_set_desc { font-size: 13px; line-height: 1.38; font-weight: 500; margin-top: 5px; margin-bottom: 10px; }
+.sub_vote_set_desc { font-size: 13px; line-height: 1.38; font-weight: 500; margin-top: 5px; }
+
+.sub_vote_set_cont { margin-top: 10px; }
 
 .sub_vote_set_list li { font-size: 12px; line-height: 1.42; }
 
-.sub_vote_set_list li + li { margin-top: 10px; }
+.sub_vote_set_list li + li { margin-top: 12px; }
 
 .sub_vote_set_list li label { display: inline-block; vertical-align: top; padding-left: 18px; position: relative; cursor: pointer; }
 
 .sub_vote_set_list li label input[type="checkbox"] { position: absolute; left: 0; top: 3px; margin: 0; width: 13px; height: 13px; }
+
+.sub_vote_set_list li .progress { margin-top: 5px; }
 
 @media (max-width: 740px) { .sub_vote_items { display: block; }
   .sub_vote_top .txt_box .sub_vote_items { display: none; } }

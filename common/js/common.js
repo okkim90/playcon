@@ -170,6 +170,7 @@ $(function(){
 
     });
 
+    // 투표 최대갯수 제한 스크립트
     $('.checklist_limit').each(function(){
         var $checkbox = $(this).find('.checkbox_limit');
         var $limit = $(this).data('limit');
@@ -180,6 +181,41 @@ $(function(){
             }
         });
     })
+
+
+
+    //투표 결과 프로그레스바 스크립트
+    $('.progress_wrap').each(function(){
+        var $progress = $(this).find('.progress');
+        var $count = $(this).find('.progress .vote_count');
+        var $total = 0;
+        var $arrmap = [];
+        for(var i=0;i<$progress.length;i++){
+            var progress_val = parseInt($progress.eq(i).data('val'));
+            $total += progress_val;
+            $arrmap.push(progress_val);
+        }
+        var $max_val = Math.max.apply(Math, $arrmap);
+
+        $(this).attr('data-total',$total);
+        $progress.each(function(){
+            var $this_val = $(this).data('val');
+            var $percentage = ($this_val*100)/$total;
+            var $vote_count = $(this).find('.vote_count');
+            $(this).find('.bar').width(Math.round($percentage)+'%');
+            $vote_count.text($this_val);
+            if($this_val == $max_val){
+                $(this).find('.bar').append('<span class="rank">1위</span>')
+            }
+        });
+
+        var width_array = $count.map(function () {
+            return $(this).width();
+        }).get();
+
+        var max_width = Math.max.apply(Math, width_array);
+        $count.width(max_width);
+    });
 
 });
 

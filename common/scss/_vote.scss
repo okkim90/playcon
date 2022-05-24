@@ -25,6 +25,11 @@
             font-size: 12px;
             font-weight: bold;
             margin-bottom: 10px;
+            &.ended {
+                border-color: #ccc;
+                background-color: #ccc;
+                color: #fff;
+            }
         }
         .tit {
             display: block;
@@ -90,11 +95,56 @@
     }
 }
 
+.progress_wrap {
+    .progress {
+        display: flex;
+        align-items: center;
+        .bar {
+            position: relative;
+            height: 8px;
+            background-color: #46b8ff;
+            border-radius: 4px;
+            .rank {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                font-size: 11px;
+                line-height: 24px;
+                color: #fff;
+                font-weight: bold;
+                border-radius: 50%;
+                background-color: #46b8ff;
+                right: 0;
+                top: 50%;
+                margin-top: -12px;
+                text-align: center;
+                letter-spacing: -0.4px;
+            }
+        }
+
+        .vote_count {
+            flex-shrink: 0;
+            font-size: 12px;
+            font-weight: bold;
+            color: #46b8ff;
+            padding-left: 8px;
+            white-space: nowrap;
+        }
+    }
+
+}
+
+
 .sub_vote_set {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid rgba(30, 144, 255, 0.5);
     border-radius: 8px;
+
+    &.ended {
+        border-color: #e5e5e5;
+        background-color: #fbfbfb;
+    }
     &_tit {
         display: block;
         font-size: 16px;
@@ -105,7 +155,9 @@
         line-height: 1.38;
         font-weight: 500;
         margin-top: 5px;
-        margin-bottom: 10px;
+    }
+    &_cont {
+        margin-top: 10px;
     }
     &_list {
 
@@ -113,7 +165,7 @@
             font-size: 12px;
             line-height: 1.42;
             & + li {
-                margin-top: 10px;
+                margin-top: 12px;
             }
             label {
                 display: inline-block;
@@ -130,7 +182,11 @@
                     height: 13px;
                 }
             }
+            .progress {
+                margin-top: 5px;
+            }
         }
+
     }
 }
 
