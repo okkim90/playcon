@@ -217,10 +217,15 @@ $(function(){
         $count.width(max_width);
     });
 
+
+    //dep2메뉴 스크롤
     dep2Scroll();
     $(window).on('load resize',function(){
         dep2Scroll();
     });
+
+    //토론결과
+    discussionResult();
 });
 
 
@@ -253,6 +258,8 @@ function winH(){
 
 
 
+
+
 //레이어 팝업 닫기
 function close_popup(target){
     var $this = $(target);
@@ -276,3 +283,42 @@ function countChar(val,limit) {
         $(val).siblings('.limit_info').find('.current').html(len);
     }
 };
+
+
+// 베스트 댓글 컨텐츠 토글버튼
+function toggle_comment_cont(target){
+    var $this = $(target);
+    $this.parents('.comment_area_cont').toggleClass('on');
+}
+
+//콤마
+function addComma(value){
+    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return value;
+}
+
+// 토론결과
+function discussionResult(){
+    let val_agree = parseInt(document.getElementById('agree_val').value);
+    let val_disagree = parseInt(document.getElementById('disagree_val').value);
+    let val_total = val_agree + val_disagree;
+    let percent_agree = (val_agree*100)/val_total;
+    let percent_disagree = (val_disagree*100)/val_total;
+
+    let $bar_agree = document.getElementById('agree_progress');
+    let $bar_disagree = document.getElementById('disagree_progress');
+    let $percent_agree = document.getElementById('agree_percent');
+    let $percent_disagree = document.getElementById('disagree_percent');
+    let $count_agree = document.getElementById('agree_count');
+    let $count_disagree = document.getElementById('disagree_count');
+
+    $bar_agree.style.width = percent_agree+'%';
+    $bar_disagree.style.width = percent_disagree+'%';
+
+    $percent_agree.textContent = Math.round(percent_agree)+"%";
+    $percent_disagree.textContent = Math.round(percent_disagree)+"%";
+
+    $count_agree.textContent = addComma(String(val_agree))+" 명";
+    $count_disagree.textContent = addComma(String(val_disagree))+" 명";
+}
+
