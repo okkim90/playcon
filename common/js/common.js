@@ -299,26 +299,28 @@ function addComma(value){
 
 // 토론결과
 function discussionResult(){
-    let val_agree = parseInt(document.getElementById('agree_val').value);
-    let val_disagree = parseInt(document.getElementById('disagree_val').value);
-    let val_total = val_agree + val_disagree;
-    let percent_agree = (val_agree*100)/val_total;
-    let percent_disagree = (val_disagree*100)/val_total;
+    if(document.querySelector('.vp_discussion_result')){
+        let val_agree = parseInt(document.getElementById('agree_val').value);
+        let val_disagree = parseInt(document.getElementById('disagree_val').value);
+        let val_total = val_agree + val_disagree;
+        let percent_agree = (val_agree*100)/val_total;
+        let percent_disagree = (val_disagree*100)/val_total;
 
-    let $bar_agree = document.getElementById('agree_progress');
-    let $bar_disagree = document.getElementById('disagree_progress');
-    let $percent_agree = document.getElementById('agree_percent');
-    let $percent_disagree = document.getElementById('disagree_percent');
-    let $count_agree = document.getElementById('agree_count');
-    let $count_disagree = document.getElementById('disagree_count');
+        let $bar_agree = document.getElementById('agree_progress');
+        let $bar_disagree = document.getElementById('disagree_progress');
+        let $percent_agree = document.getElementById('agree_percent');
+        let $percent_disagree = document.getElementById('disagree_percent');
+        let $count_agree = document.getElementById('agree_count');
+        let $count_disagree = document.getElementById('disagree_count');
 
-    $bar_agree.style.width = percent_agree+'%';
-    $bar_disagree.style.width = percent_disagree+'%';
+        $bar_agree.style.width = percent_agree+'%';
+        $bar_disagree.style.width = percent_disagree+'%';
 
-    $percent_agree.textContent = Math.round(percent_agree)+"%";
-    $percent_disagree.textContent = Math.round(percent_disagree)+"%";
+        $percent_agree.textContent = Math.round(percent_agree)+"%";
+        $percent_disagree.textContent = Math.round(percent_disagree)+"%";
 
-    $count_agree.textContent = addComma(String(val_agree))+" 명";
-    $count_disagree.textContent = addComma(String(val_disagree))+" 명";
+        $count_agree.textContent = addComma(String(val_agree))+" 명";
+        $count_disagree.textContent = addComma(String(val_disagree))+" 명";
+    }
 }
 
