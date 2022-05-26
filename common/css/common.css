@@ -1296,7 +1296,7 @@
 
 .sc_thumb_info_item.ct_co { padding-left: 11px; background-image: url(../../images/ico/ico_ct_co.svg); background-position: 0 60%; }
 
-.sc_thumb_info.ty_inside { position: absolute; left: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); border-radius: 0 8px 8px 0; z-index: 10; padding: 0 8px; height: 16px; }
+.sc_thumb_info.ty_inside { position: absolute; left: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); border-radius: 0 8px 8px 0; z-index: 10; padding: 0 8px; height: 16px; }
 
 .sc_thumb_info.ty_inside .sc_thumb_info_item { line-height: 15px; color: #fff; }
 
