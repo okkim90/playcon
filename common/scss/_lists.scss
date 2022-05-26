@@ -144,6 +144,33 @@
 }
 
 
+.sub_vid_slide {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-right: -20px;
+
+    .sub_vid_list {
+        white-space: nowrap;
+        font-size: 0;
+    }
+    .sub_vid_item {
+        margin-right: 20px;
+        display: inline-block;
+        width: 36%;
+        vertical-align: top;
+        .txt_box {
+            margin-top: 5px;
+            .tit {
+                font-size: 12px;
+                line-height: 18px;
+                max-height: 36px;
+                letter-spacing: -0.12px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
 
 @media (max-width:767px) {
     .pp_gallery {

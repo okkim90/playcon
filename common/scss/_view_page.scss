@@ -98,7 +98,7 @@
         }
     }
     .vp_cont_area {
-        padding: 20px 0;
+        padding: 30px 0;
         * {
             max-width: 100%;
         }
@@ -359,3 +359,11 @@
     }
 }
 
+
+@media (max-width:767px) {
+    .vp_area {
+        .vp_cont_area {
+            padding: 20px 0;
+        }
+    }
+}
