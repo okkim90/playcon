@@ -48,6 +48,17 @@
             margin-top: 20px;
         }
     }
+    &.ty_freeboard {
+
+        .pp_list_item {
+            padding-top: 15px;
+            border-top: 1px solid #f1f1f1;
+            & + .pp_list_item {
+                margin-top: 15px;
+            }
+        }
+    }
+
     &_link {
         display: flex;
         //align-items: center;
@@ -56,6 +67,9 @@
         width: 106px;
         flex-shrink: 0;
         position: relative;
+        @at-root .ty_freeboard & {
+            padding-left: 10px;
+        }
         .sc_thumb_info {
             margin-top: 5px;
         }
@@ -91,12 +105,21 @@
         flex: 1;
         min-width: 0;
         padding-left: 10px;
+        @at-root .ty_freeboard & {
+            padding-left: 0;
+        }
         .tit {
             font-size: 13px;
             line-height: 18px;
             max-height: 36px;
             letter-spacing: -0.13px;
+            .sc_ico {
+                margin-right: 2px;
+            }
         }
+    }
+    .writer_set {
+        margin-top: 6px;
     }
 }
 

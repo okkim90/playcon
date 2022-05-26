@@ -197,3 +197,13 @@ img {
 .pr0 {
 	padding-right: 0 !important;
 }
+
+
+.clearfix {
+	*zoom:1
+}
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}

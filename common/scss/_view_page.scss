@@ -58,6 +58,15 @@
         }
         .vp_tit_bot {
             margin-top: 17px;
+            &.ty_writer {
+                display: flex;
+                justify-content: space-between;
+                .btns {
+                    flex-shrink: 0;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                }
+            }
         }
         .vp_writer {
             display: inline-block;
