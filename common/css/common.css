@@ -946,6 +946,22 @@
 
 @media (max-width: 767px) { .vp_area .vp_cont_area { padding: 20px 0; } }
 
+.wp_cont .wp_btn_list { margin-top: 20px; }
+
+.wp_cont .ta_ty1 { margin-top: 30px; }
+
+.wp_btn_list { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.wp_btn_list li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.wp_btn_list li + li { margin-left: 10px; }
+
+.wp_btn_list .wp_btn { display: block; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #f5f5f5; border-radius: 3px; background-color: #fff; text-align: center; padding: 15px 0 7px; }
+
+.wp_btn_list .wp_btn .ico_box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background-color: #fef8d9; }
+
+.wp_btn_list .wp_btn strong { display: block; font-size: 11px; line-height: 13px; margin-top: 5px; color: #212121; font-weight: normal; }
+
 .sub_vote_box { padding: 20px; border: 1px solid rgba(30, 144, 255, 0.5); border-radius: 8px; }
 
 .sub_vote_box ~ .pp_gallery { margin-top: 23px; }
@@ -1194,6 +1210,8 @@
 
 .btn_small.white3 { padding: 0 10px; color: #424242; border-color: #e1e1e1; background-color: #fff; font-weight: 500; }
 
+.btn_small.white4 { padding: 0 5px; color: #666; border-color: #999; background-color: #fff; font-weight: 500; }
+
 .btn_small.grey { padding: 0 10px; color: #424242; background-color: #f5f5f5; border-color: #e1e1e1; }
 
 .btn_save { display: inline-block; vertical-align: top; width: 40px; height: 40px; background-repeat: no-repeat; background-position: center center; background-image: url(/images/ico/ico_save.svg); }
@@ -1382,6 +1400,8 @@
 
 .sub_header .btn_back { position: absolute; left: 0; top: 0; background: url("../../images/ico/arrow_l_b.svg") no-repeat center center; }
 
+.sub_header .btns { position: absolute; right: 0; top: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
 .sc_tit h1, .sc_tit h2, .sc_tit h3, .sc_tit h4 { font-weight: 500; }
 
 .sc_thumb { padding-top: 56.25%; position: relative; }
@@ -1474,6 +1494,14 @@
 
 .sc_ico.new { width: 16px; height: 16px; line-height: 16px; font-size: 11px; color: #fff; background-color: #f00; border-radius: 50%; text-align: center; }
 
+.caution_list.ty_bot { margin-top: 10px; }
+
+.caution_list li { position: relative; padding-left: 12px; font-size: 11px; line-height: 1.4; color: #999; }
+
+.caution_list li::before { content: '※'; position: absolute; left: 0; top: 0; }
+
+.caution_list li + li { margin-top: 4px; }
+
 .layer_popup { display: none; position: fixed; z-index: 9999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); left: 0; top: 0; }
 
 .layer_popup.on { display: block; }
@@ -1519,6 +1547,8 @@
 .input_ty1 { width: 100%; height: 40px; border-radius: 3px; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 10px; color: #424242; outline: none; border-radius: 4px; }
 
 .ta_ty1 { width: 100%; height: 120px; padding: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 3px; border: 1px solid #ccc; box-sizing: border-box; color: #424242; outline: none; border-radius: 4px; font-size: 12px; line-height: 1.38; }
+
+.ta_ty1.ty_wp { height: 300px; }
 
 .ta_ty1::-webkit-scrollbar { width: 4px; }
 
