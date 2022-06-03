@@ -634,6 +634,14 @@
 
 .comment_set .txt_area { margin-top: 10px; }
 
+.comment_set .comment_status { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-bottom: 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; vertical-align: top; padding: 0 9px; font-size: 11px; font-weight: bold; letter-spacing: -0.55px; line-height: 22px; border: 1px solid transparent; border-radius: 8px; }
+
+.comment_set .comment_status img { width: 10px; margin-right: 4px; }
+
+.comment_set .comment_status.agree { border-color: #ffa500; color: #ffa500; }
+
+.comment_set .comment_status.disagree { border-color: #50c785; color: #50c785; }
+
 .comment_area_top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .comment_area_top .user_info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-width: 0; }
@@ -1042,6 +1050,20 @@
 
 @media (max-width: 740px) { .sub_vote_items { display: block; }
   .sub_vote_top .txt_box .sub_vote_items { display: none; } }
+
+.paging { margin-top: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.paging_list { margin: 0 10px; }
+
+.paging_list li { display: inline-block; vertical-align: top; }
+
+.paging_btn { display: block; width: 20px; height: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; color: #eee; }
+
+.paging_btn.current { font-weight: bold; }
+
+.paging_btn.ty_ctrl { background-color: #1e90ff; }
+
+.paging_btn.ty_ctrl + .paging_btn.ty_ctrl { margin-left: 5px; }
 
 .fc_blue { color: #1e90ff; }
 

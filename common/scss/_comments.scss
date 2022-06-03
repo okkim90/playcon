@@ -168,6 +168,32 @@
         margin-top: 10px;
     }
 
+    .comment_status {
+        display: inline-flex;
+        margin-bottom: 10px;
+        align-items: center;
+        vertical-align: top;
+        padding: 0 9px;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: -0.55px;
+        line-height: 22px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        img {
+            width: 10px;
+            margin-right: 4px;
+
+        }
+        &.agree {
+            border-color: map-get($colors, orange);
+            color: map-get($colors, orange);
+        }
+        &.disagree {
+            border-color: map-get($colors, green);
+            color: map-get($colors, green);
+        }
+    }
 }
 .comment_area_top {
     display: flex;

@@ -13,6 +13,7 @@
 @import '_view_page';
 @import '_write_page';
 @import '_vote';
+@import '_paging';
 
 
 @each $key, $color in $colors {

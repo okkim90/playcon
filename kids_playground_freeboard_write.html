@@ -30,6 +30,7 @@
             <div id="container" class="sub_m">
                 <div class="sub_wrap pt0">
                     <div class="sub_inner">
+
                         <div class="wp_cont">
                             <input type="text" class="input_ty1" placeholder="제목을 입력 해주세요.">
                             <ul class="wp_btn_list">
@@ -159,3 +160,14 @@
     <!-- //audio_player -->
 </body>
 </html>
+
+
+
+
+<script>
+    $(window).on('load resize',function(){
+        var i_width = $('.pv_detail iframe').width()*0.5625;
+        $('.pv_detail iframe').height(i_width);
+    });
+
+</script>
